@@ -1,6 +1,7 @@
-INFO
+# Biblioteka domowa
 
-Nazwa bazy danych: komis
+## Informacje o projekcie 
+Nazwa bazy danych: biblioteka
 Przeglądarka, na której testowałem działanie: Chrome
 
 Folder Projekt zawiera następujące foldery
@@ -10,7 +11,7 @@ Folder Projekt zawiera następujące foldery
 index.php zawiera stronę główną
 Zrzuty z Aplikacji.docx - Tu są najważniejsze zrzuty ekranu z aplikacji
 
-URUCHOMIENIE
+## URUCHOMIENIE
 
 Aby uruchomić projekt należy:
 1. Uruchomić program xampp
@@ -21,4 +22,3 @@ Aby uruchomić projekt należy:
 6. Zaimportować plik biblioteka.sql
 7. Przekopiować folder biblioteka do folderu htdocs progrmu xampp (najczęściej to jest C:\xampp\htdocs)
 8. Wpisać w pasku adresu w przeglądarce: localhost/biblioteka
-9. W razie problemów kontaktować się ze mna na maila: rafi.kosowski2000@gmail.com  
