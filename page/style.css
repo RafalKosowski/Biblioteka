@@ -1,0 +1,255 @@
+body {
+  font-family: 'Lato', sans-serif;
+  /* background-color: #f1f1f1; */
+  margin: 0;
+  padding: 0;
+  /* background-color: rgba(0, 0, 0); przezroczysty czarny kolor */
+
+  background-image: url("bacground.jfif"); /* obraz tła */
+  background-position: center center; /* pozycja obrazu */
+  
+  /* background-repeat: no-repeat; nie powtarzaj obrazu */
+  background-size: cover; /* zmień rozmiar obrazu, aby pokryć całe tło */
+  /* min-height: 100%; */
+
+}
+
+/* Ustawienie menu */
+#menu{
+  color:white;
+  margin: 0;
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content:center;
+  background-color: #333333;
+  align-items: center;
+  padding: 20px;
+} 
+
+#menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#menu h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+#menu nav{
+  font-size: 18pt;
+  position: relative;
+}
+
+#menu a{
+  text-decoration: none;
+  color:white;
+}
+
+#menu nav li{
+  list-style: none;
+  border: 1px dotted grey;
+  position: relative;
+  float: left;
+  margin: 0 10px;
+}
+
+#menu nav li:hover, #osoba:hover{
+  background-color: lightgray;
+}
+.active{
+  background-color: grey;
+}
+
+li{
+  display: flex;
+}
+
+
+/* Ustawienia dla formularza logowania */
+#form,#form-search,#form-add{
+  display: flex;
+  justify-content: center;
+  
+}
+
+form{
+  position: relative;
+  margin: 1%;
+  padding: 2%;
+  border: solid darkgray 2px;
+  font-size: 14pt;
+  width: fit-content;
+  justify-content:center;
+  text-align: center;
+  filter: brightness(100%);
+  background-color: #f1f1f1;
+
+  
+}
+form label{
+  padding: 10px;
+  margin: 5px; 
+  position: relative;
+  
+  display: flex;
+}
+
+select, textarea, input{
+  margin: 5px;
+  padding: 10px; 
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+form input{
+  display: flex;
+  justify-content: center;
+} 
+
+/* style dla stopki */
+footer{
+  color:white;
+  /* position: relative;
+  float: left; */
+  /* padding: 2%; */
+  display: block;
+  background-color: #333333;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  
+  clear: both;
+  /* /* position: absolute; */
+  bottom: 0;
+  left: 0;
+  margin-top: 150px; 
+}
+
+footer p {
+  margin: 0;
+}
+
+#form-search select,#form-search textarea,#form-search input,#form-add select,#form-add textarea,#form-add input{
+  min-width: 90%;
+}
+#form-search form,#form-add form{
+  min-width: 70%;
+}
+
+/* Ustawienia dla urządzeń z dużymi ekranami */
+@media only screen and (min-width: 481px) {
+  /* Style dla elementów na stronie */
+  .nav-button {
+    display: none;
+    background-color: red;
+  }
+}
+
+/* Ustawienia dla urządzeń mobilnych */
+@media only screen and (max-width: 480px) {
+  /* Style dla elementów na stronie */
+  
+  body {
+    font-size: 16px;
+  }
+  #menu {
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+  }
+  #menu li{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #form {
+    width: 90%;
+    
+  }
+  #nav-menu {
+    display: none;
+
+  }
+  /* Inne style dla elementów na stronie */
+}
+#pole{
+  display: flex;
+  justify-content: center;
+}
+#wyniki {
+  /* position: relative; */
+  margin-top: 5%;
+  display: flex;
+  width: fit-content;
+  max-width: 90%;
+  justify-content: center;
+  background-color: #f1f1f1;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+}
+#wyniki h1,#wyniki h2 {
+  color: #333;
+  flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+
+#wyniki ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  /* flex-direction: column; */
+    justify-content: center;
+    width: fit-content;
+
+
+
+}
+
+#wyniki li {
+  margin: 10px 10px;
+  flex-wrap: wrap;
+    flex-direction: column;
+    border: 1px black solid;
+}
+
+#wyniki p {
+  font-size: 0.9em;
+  color: #666;
+  margin: 5px 0;
+}
+#wyniki li ul li {
+  list-style:circle;
+  margin: 1px;
+  padding: 2px;
+  font-weight: normal;
+  border: none;
+  
+
+}
+.loginerror p{
+  background-color: lightcoral;
+  border: red solid 1px;
+  border-radius: 5px;
+  color:red;
+}
+
+.istniejacekonto p{
+  background-color: lightgreen;
+  border: green solid 1px;
+  border-radius: 5px;
+  color:green;
+}
+label[for][required]::after{
+  content: "*";
+  color: red;
+}
